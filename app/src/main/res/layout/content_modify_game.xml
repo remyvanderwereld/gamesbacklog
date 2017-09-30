@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_modify_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.test.gamesbacklog.activity.ModifyGameActivity"
+    tools:showIn="@layout/activity_modify_game">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:showDividers="beginning|end"
+        card_view:cardBackgroundColor="@color/cardview_light_background"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="8dp"
+        android:id="@+id/cardView">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:text="Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_alignParentStart="true"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addTitleV" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/addTitle"
+                android:layout_alignParentStart="true"
+                android:id="@+id/modifyTitle" />
+
+            <TextView
+                android:text="Platform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addTitle"
+                android:layout_alignStart="@+id/textView"
+                android:textSize="20sp"
+                android:id="@+id/addPlatformV" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/addPlatform"
+                android:layout_alignStart="@+id/addPlatform"
+                android:id="@+id/modifyPlatform" />
+
+            <TextView
+                android:text="Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/editText2"
+                android:layout_alignStart="@+id/editText2"
+                android:id="@+id/textView3" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:id="@+id/modifyStatusSpinner" />
+
+            <TextView
+                android:text="Notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_alignStart="@+id/textView3"
+                android:textSize="20sp"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:id="@+id/modifyNotes"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
